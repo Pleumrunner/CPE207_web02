@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    #block {
+        background-image: url('BG01.jpg');
+        color: rgb(240, 235, 235);
+        margin: auto;
+        padding: 65px;
+        font: normal 16px Arial, Helvetica, sans-serif;
+    }
+
+    .affix {
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+        position: fixed;
+    }
+
+    .block-IMG {
+        float: center;
+        width: 100%;
+        background-color: rgb(197, 194, 194);
+        padding: 2px;
+        box-sizing: border-box;
+    }
+
+    .font {
+        color: rgb(253, 240, 223);
+    }
+
+    .features {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 0 2em 0;
+    }
+
+    .features article {
+        padding: 1.75em 1.75em 0.1em 1.75em;
+        background-color: #353849;
+        border-radius: 5px;
+        margin: 1.5em 3em 1.5em 0;
+        width: calc(50% - 1.5em);
+    }
+
+    .features article:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .features article .image {
+        border-radius: 5px 5px 0 0;
+        display: block;
+        margin-bottom: 1.75em;
+        margin-left: -1.75em;
+        margin-top: -1.75em;
+        position: relative;
+        width: calc(100% + 3.5em);
+    }
+
+    .features article .image img {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 980px) {
+
+        .features article {
+            margin: 1em 2em 1em 0;
+            width: calc(50% - 1em);
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .features article {
+            padding: 1.5em 1.5em 0.1em 1.5em;
+            margin: 0.875em 1.75em 0.875em 0;
+            width: calc(50% - 0.875em - 1px);
+        }
+
+        .features article .image {
+            margin-bottom: 1.5em;
+            margin-left: -1.5em;
+            margin-top: -1.5em;
+            width: calc(100% + 3em);
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .features {
+            display: block;
+        }
+
+        .features article {
+            width: 100%;
+            margin: 0 0 2em 0 !important;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="affix">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="HOME.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="HOME.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <div id="block">
+        <br>
+        <h3>คลังภาพ</h3>
+        <h6 class="card-subtitle font">Gallery</h6><br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar"></div>
+        </div>
+        <section class="features">
+            <article>
+                <a href="#" class="image"><img src="pleum11.jpg" alt="600610751" /></a>
+                <h3 class="major">ต้นไม้ตระกูลเก่าแก่ในยุคใหม่</h3>
+                <p>แม้จะเป็นต้นไม้ที่เกิดในสมัยยุคไนโดเสาร์แต่ก็สามารถอยู่รอดได้ถ้ารู้จักปรับตัว</p>
+            </article>
+            <article>
+                <a href="#" class="image"><img src="pleum33.jpg" alt="600610751" /></a>
+                <h3 class="major">กำแพงที่เก็บเรื่องราวไว้มากมาย</h3>
+                <p>กำแพงที่ว่างเปล่าจะไม่มีคนสนใจแต่ถ้ามีภาพก็จะมีคนมาสนใจแต่ก็ไม่ได้สนใจที่กำแพง</p>
+            </article>
+            <article>
+                <a href="#" class="image"><img src="pleum22.jpg" alt="600610751" /></a>
+                <h3 class="major">พลังช้างเหล็ก</h3>
+                <p>วันที่ครอบครัววิศวะกรรมศาสตร์กลับมาอบอุ่น เพื่อน พี่ น้อง มาร่วมร้องเพลงเชียร์</p>
+            </article>
+            <article>
+                <a href="#" class="image"><img src="pleum55.jpg" alt="600610751" /></a>
+                <h3 class="major">อ่างแก้ว</h3>
+                <p>สถานที่พักผ่อนของเราชาว มช.</p>
+            </article>
+            <article>
+                <a href="#" class="image"><img src="pleum66.jpg" alt="600610751" /></a>
+                <h3 class="major">ตกปลากับเพื่อน</h3>
+                <p>คนเราไม่สามารถอยู่คนเดียวได้โดยมีความสุขถึงจะไม่เยอะแต่จะมีเพื่อนสักคนเสมอที่พร้อมช่วยเหลือคุณ</p>
+            </article>
+            <article>
+                <a href="#" class="image"><img src="pleum77.jpg" alt="600610751" /></a>
+                <h3 class="major">ความเปลี่ยนแปลง</h3>
+                <p>เด็กหนุ่มที่ผ่านเรื่องราวต่างๆมามากมายแต่ยังน้อยนิดเมื่อเทียบกับโลกใบนี้</p>
+            </article>
+            <article>
+                <a href="#" class="image"><img src="pleum88.jpg" alt="600610751" /></a>
+                <h3 class="major">ดอกไม้</h3>
+                <p>ดอกไม้ที่ออกหากินตามยุคสมัยเพื่อตามโลกให้ทัน</p>
+            </article>
+            <article>
+                <a href="#" class="image"><img src="pleum44.jpg" alt="600610751" /></a>
+                <h3 class="major">ต้นอ่อนที่ถือกำเนิด</h3>
+                <p>ต้นอ่อนที่เกิดขึ้นและสร้างเรื่องราวของตัวเองเพื่อที่สักวันจะได้ส่งต่อเรื่องราวนั้น</p>
+            </article>
+            <article>
+                <a href="#" class="image"><img src="pleum99.jpg" alt="600610751" /></a>
+                <h3 class="major">ชาวเกียร์</h3>
+                <p>งาน Sport Day ของเราชาววิศวะมช. ENT60 GEAR48 GEAR47 GEAR46</p>
+            </article>
+            <article>
+                <a href="#" class="image"><img src="pleum100.jpg" alt="600610751" /></a>
+                <h3 class="major">ใบอ่อนที่ถือกำเนิด</h3>
+                <p>ใบอ่อนที่สักวันหวังว่าจะเป็นส่วนสำคัญของความสวยงามของต้นไม้</p>
+            </article>
+        </section>
+        <p align="center">
+            Pawaris Sueaaeim — pawaris_sueaaeim@cmu.ac.th — (+66)-955799772
+        </p>
+    </div>
+</body>
+
+</html>
