@@ -319,7 +319,7 @@
         <div class="progress">
             <div class="progress-bar" role="progressbar"></div>
         </div><br>
-        <form action="Contact.html">
+        <form action="Contact.html" id="My-form">
             <div class="fields">
                 <div class="field">
                     <label for="name">Name</label>
@@ -339,17 +339,31 @@
                 <div class="form-group">
                     <div class="custom-control custom-radio">
                         <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
-                            checked="">
+                            value="Male" checked="Male">
                         <label class="custom-control-label" for="customRadio1">Male</label>
                     </div><br>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"
+                            value="Female" checked="Female">
                         <label class="custom-control-label" for="customRadio2">Female</label>
                     </div>
                 </div>
             </fieldset><br>
-            <button type="submit" name="Submit" value="Submit" class="btn btn-primary">Submit</button>
+            <button type="submit" name="Submit" value="Submit" class="btn btn-primary">Submit</button><br><br><br>
         </form>
+        <table class="table table-striped mt-5" style="margin-top: 100px" id="table2">
+            <thead>
+                <tr style="background-color:rgba(247, 243, 242, 0.781);">
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>MESSAGE</th>
+                    <th>GENDER</th>
+                </tr>
+            </thead>
+            <tbody id="book-list" style="background-color:rgba(245, 242, 48, 0.5);"></tbody>
+        </table>
+
+        <script src="app.js"></script>
 </body>
 
 </html>
